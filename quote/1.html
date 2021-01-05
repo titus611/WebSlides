@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CLEAN MARKUP = GOOD KARMA.
+      Hi source code lover,
+
+      you're a curious person and a fast learner ;)
+      Let's make something beautiful together. Contribute on Github:
+      https://github.com/webslides/webslides
+
+      Thanks!
+    -->
+
+    <!-- SEO -->
+    <title>Tomas Rios &middot; Quote</title>
+
+    <!-- CSS for table prices -by tito- -->
+    <link rel="stylesheet" type="text/css" media="all" href="../static/css/prices.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    
+    <style>
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+html, html a {
+  -webkit-font-smoothing: antialiased !important;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+body {
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+  margin-top: 2em;
+}
+
+small {
+  display: block;
+  opacity: .7;
+}
+
+.subscription {
+  margin-top: 2em;
+}
+.subscription .title {
+  font-size: 1.2em;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+@media (max-width: 480px) {
+  .subscription .title {
+    font-size: 1em;
+  }
+}
+.subscription .price {
+  margin: 1.4em 0;
+}
+.subscription .price span {
+  font-weight: 300;
+  font-size: 5em;
+  padding: 0 .025em;
+}
+@media (max-width: 480px) {
+  .subscription .price span {
+    font-size: 3em;
+  }
+}
+.subscription .inclusions {
+  text-transform: uppercase;
+}
+
+.btn-opt-group {
+  display: block;
+  margin-left: 0;
+  margin-right: 0;
+}
+.btn-opt-group .btn {
+  border-radius: 0.2em;
+  padding: 2em;
+  text-transform: none;
+  white-space: normal;
+  transition: all .4s ease;
+}
+.btn-opt-group .btn input[type="radio"] {
+  position: absolute;
+  clip: rect(0, 0, 0, 0);
+}
+.btn-opt-group .btn-opt {
+  background-color: #fff;
+  border-color: #95a8b2;
+  color: #78909C;
+  font-size: 1em;
+  height: 20em;
+  margin-top: 4em;
+}
+.btn-opt-group .btn-opt:focus, .btn-opt-group .btn-opt.focus {
+  border-color: #ff3366;
+  transition: all .4s ease;
+}
+.btn-opt-group .btn-opt:focus .title, .btn-opt-group .btn-opt.focus .title {
+  color: #ff3366;
+}
+.btn-opt-group .btn-opt:hover {
+  border-color: #ff3366;
+  transition: all .4s ease;
+}
+.btn-opt-group .btn-opt:hover .title {
+  color: #ff3366;
+}
+.btn-opt-group .btn-opt:active, .btn-opt-group .btn-opt.active, .open > .btn-opt-group .btn-opt.dropdown-toggle {
+  border-color: #ff3366;
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  box-shadow: inset 0 0 0 1px #ff3366;
+  border: 0;
+}
+.btn-opt-group .btn-opt:active .title, .btn-opt-group .btn-opt:active .price, .btn-opt-group .btn-opt.active .title, .btn-opt-group .btn-opt.active .price, .open > .btn-opt-group .btn-opt.dropdown-toggle .title, .open > .btn-opt-group .btn-opt.dropdown-toggle .price {
+  color: #ff3366;
+}
+.btn-opt-group .btn-opt:active, .btn-opt-group .btn-opt.active, .open > .btn-opt-group .btn-opt.dropdown-toggle {
+  background-image: none;
+}
+</style>
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
+
+</head>
+<body>
+<div class="container">
+  <h1 class="text-center">Simple Plans for Everyone!</h1>
+  <div class="row btn-opt-group subscription radio" data-toggle="buttons">
+    <div class="col-md-3 col-sm-6 col-xs-6">
+      <!-- Option 1 -->
+      <label class="btn btn-opt btn-block">
+        <input type="radio" name="selectPlan" id="planFree" checked>
+        <p class="title">FREE</p>
+        <p class="price">$<span class="price">0</span>/mo.</p>
+        <p class="inclusions">1 Prototype</p>
+      </label>
+    </div>
+    <div class="col-md-3 col-sm-6 col-xs-6">
+      <!-- Option 2 -->
+      <label class="btn btn-opt btn-block">
+        <input type="radio" name="selectPlan" id="planStarter">
+        <p class="title">Starter</p>
+        <p class="price">$<span class="price">15</span>/mo.</p>
+        <p class="inclusions">3 Prototypes</p>
+      </label>
+</div>
+    <div class="col-md-3 col-sm-6 col-xs-6">
+      <!-- Option 3 -->
+      <label class="btn btn-opt btn-block">
+        <input type="radio" name="selectPlan" id="planProfessional">
+        <p class="title">Professional</p>
+        <p class="price">$<span class="price">25</span>/mo.</p>
+        <p class="inclusions">Unlimited Prototypes</p>
+      </label>
+</div>
+    <div class="col-md-3 col-sm-6 col-xs-6">
+    <!-- Option 4 -->
+    <label class="btn btn-opt btn-block">
+      <input type="radio" name="selectPlan" id="planTeam">
+        <p class="title">Team</p>
+        <p class="price">$<span class="price">99</span>/mo.</p>
+        <p class="inclusions">Unlimited Prototypes <small>Up to 5 members</small></p>
+    </label>
+  </div>
+  </div>
+</div>
+</body>
+</html>
